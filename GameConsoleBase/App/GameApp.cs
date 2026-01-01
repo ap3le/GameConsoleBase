@@ -1,4 +1,5 @@
 ﻿using GameConsoleBase.BaseClass;
+using GameConsoleBase.Models;
 using GameConsoleBase.Pages;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace GameConsoleBase.App
     internal class GameApp
     {
         private Screen MainPage;
+        public static User LoginUser { get; set; }
 
         public GameApp() 
         {
@@ -21,6 +23,8 @@ namespace GameConsoleBase.App
         {
             MainPage.Show();
         }
+
+        
 
 
     }

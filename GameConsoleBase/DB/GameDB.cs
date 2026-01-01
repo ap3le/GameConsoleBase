@@ -23,6 +23,11 @@ namespace GameConsoleBase.DB
             return true;
         }
 
+        public static User UserLogin(string? username, string? password)
+        {
+            return users.SingleOrDefault(u=>u.UserName==username && u.Password==password);
+        }
+
 
     }
 }
